@@ -5,7 +5,8 @@ export default function Router() {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path='home' element={ <Home/> }/>
+                <Route path='/' element={ <Home/> }/>
+                <Route path='/home' element={ <Home/> }/>
             </Routes>
         </BrowserRouter>
     );
