@@ -1,11 +1,11 @@
 import Header from '../components/Header';
-import HomeContent from '../components/HomeContent';
+import TextImgContent from '../components/TextImgContent';
 
 export default function Home() {
     return(
         <>
             <Header/>
-            <HomeContent/>
+            <TextImgContent/>
         </>
     );
 }
