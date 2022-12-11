@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 5%;
+    margin-top: 10px;
+}
+
+header nav {
+    width: 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+header input {
+    background-color: #121214;
+    border: #121214;
+    margin-top: 10px;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+header input:hover{
+    color: #2F72BC;
+}
