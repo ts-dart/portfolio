@@ -6,7 +6,7 @@ export default function Header() {
 
     return(
         <header>
-            <img src='images/logo.png' alt='imagem contendo uma logo'/>
+            <img src='images/undraw_coding_re_iv62.svg' alt='imagem contendo uma logo'/>
             <nav>
                 <input
                     onClick={() => navigate('/home')}

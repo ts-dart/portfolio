@@ -1,16 +1,58 @@
-#TextImgContent {
+#mainContent {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: 30px auto;
+    margin-top: 50px;
+}
+
+#TextContent h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+#TextContent span {
+    font-size: 70px;
+    color: #2F72BC;
+    text-align: center;
+}
+
+#contactsContent {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
+    width: 80%;
 }
 
-#TextImgContent h1 {
+#contactsContent h2 {
     color: white;
+    font-size: 22px;
+    font-weight: normal;
 }
 
-#TextImgContent img {
-    width: 30%;
+#contactsContent span {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#contactsContent span button {
+    background-color: #121214;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer ;
+}
+
+#contactsContent span button:hover {
+    background-color: #2F72BC;
+    border: solid 2px #2F72BC;
 }
