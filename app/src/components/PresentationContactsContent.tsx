@@ -2,23 +2,19 @@ import '../styles/TextImgContent.css';
 import genPopup from '../utils/popupEmail';
 
 export default function TextImgContent() {
-    const emailsPopup = () => {
-        /* window.open (
-            'popup.html',
-            'pagina',
-            "width=350, height=255, top=100, left=110, scrollbars=no "
-        ); */
+    const emailsPopup = ():void => {
         genPopup();
     }
 
     return(
         <div id='mainContent'>
             <div id='TextContent'>
-                <h1>
-                    Olá 👋.<br/>
-                    Me chamo <span>Thiago Henrique</span><br/>
-                    Desenvolvedor <span>Web Full-stack</span>
-                </h1>
+                <div id='salutation'>
+                    <h2>Olá 👋, meu nome é</h2>
+                    <h1 id='name-text-content'>Thiago Henrique</h1>
+                    <h2>sou Desenvolvedor Web Full-stack</h2>
+                </div>
+                <img src='images/undraw_coding_re_iv62.svg'/>
             </div>
             <div id='contactsContent'>
                 <h2>Você pode me encontrar em :</h2>

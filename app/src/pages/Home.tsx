@@ -1,11 +1,15 @@
 import Header from '../components/Header';
-import TextImgContent from '../components/TextImgContent';
+import PresentationContactsContent from '../components/PresentationContactsContent';
+import PreviwProjects from '../components/PreviwProjects';
 
 export default function Home() {
     return(
         <>
             <Header/>
-            <TextImgContent/>
+            <main>
+                <PresentationContactsContent/>
+                <PreviwProjects/>
+            </main>
         </>
     );
 }

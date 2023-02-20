@@ -3,12 +3,24 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 30px auto;
-    width: 70%;
+    margin: 10px auto;
+    width: 75%;
 }
 
-header img {
-    width: 10%;
+header span {
+    display: flex;
+    flex-flow: row;
+}
+
+.tag {
+    color: #2F72BC;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#logo-name {
+    color: white;
+    font-size: 22px;
 }
 
 header nav {
