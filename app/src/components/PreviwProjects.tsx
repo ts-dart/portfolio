@@ -1,6 +1,21 @@
 import '../styles/PreviwProjects.css';
 
 export default function PreviwProjects() {
+    const arrProjects = [
+        {
+            name: 'TTunes',
+            repLink: 'https://github.com/ts-dart/TTunes',
+            deployLink: 'https://t-tunes.vercel.app/',
+            imageThumbUrl: '',
+        },
+        {
+            name: 'TTrivia',
+            repLink: 'https://github.com/ts-dart/frontend-app-trivia',
+            deployLink: 'https://app-trivia.vercel.app/',
+            imageThumbUrl: '',
+        }
+    ]
+
     return (
         <div id="previwProjectsContainer">
             <div id='previwProjectsCabecalho'>
