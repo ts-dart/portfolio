@@ -1,9 +1,21 @@
 #previwProjectsContainer {
-    margin: 30px auto;
-    width: 70%;
+    margin: 90px auto;
+    width: 80%;
+}
+
+#previwProjectsCabecalho {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#previwProjectsCabecalho h1{
+    color: white;
+    font-size: 20px;
 }
 
 #rowImg {
     width: 580px;
-    height: 30px;
+    height: 12px;
 }

@@ -1,4 +1,4 @@
-import '../styles/TextImgContent.css';
+import '../styles/PresentationContactsContent.css';
 import genPopup from '../utils/popupEmail';
 
 export default function TextImgContent() {
