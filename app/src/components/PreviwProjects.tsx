@@ -32,8 +32,8 @@ export default function PreviwProjects() {
             repLink: 'https://github.com/ts-dart/trybe-futebol-clube',
             deployLink: '',
             technologies: ['TypeScript', 'Express', 'Sequelize'],
-            description: 'e possivel ver classificação de times, jogos e mais',
-            imageThumbUrl: '',
+            description: 'veja classificação de times, jogos e mais "dados simulados"',
+            imageThumbUrl: 'https://raw.githubusercontent.com/ts-dart/portfolio/main/app/public/images/Captura%20de%20tela%20de%202023-02-21%2000-23-37.png',
         }
     ]
 
@@ -55,9 +55,9 @@ export default function PreviwProjects() {
                             {project.technologies.map((technologie) => <p>{technologie}</p>)}
                         </div>
                         <div id='buttonsInCardPreviwProjects'>
-                            <a href={project.repLink} target='_blank'><button>Acessar repositorio</button></a>
+                            <a href={project.repLink} target='_blank' rel="noreferrer"><button>Acessar repositorio</button></a>
                             {project.deployLink.length > 0 
-                                ? (<a href={project.deployLink} target='_blank'><button>Acessar aplicação</button></a>)
+                                ? (<a href={project.deployLink} target='_blank' rel="noreferrer"><button>Acessar aplicação</button></a>)
                                 : null}
                         </div>
                     </div>

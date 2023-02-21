@@ -14,7 +14,7 @@ export default function TextImgContent() {
                     <h1 id='name-text-content'>Thiago Henrique</h1>
                     <h2>sou Desenvolvedor Web Full-stack</h2>
                 </div>
-                <img src='images/undraw_coding_re_iv62.svg'/>
+                <img src='images/undraw_coding_re_iv62.svg' alt=''/>
             </div>
             <div id='contactsContent'>
                 <h2>Você pode me encontrar em :</h2>

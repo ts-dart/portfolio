@@ -19,11 +19,13 @@ export default function Header() {
                     type='button'
                     value='Home'
                 />
-                <input
-                    onClick={() => navigate('/projects')}
-                    type='button'
-                    value='Projetos'
-                />
+                <a href="#previwProjectsContainer">
+                    <input
+                        /* onClick={() => navigate('/projects')} */
+                        type='button'
+                        value='Projetos'
+                    />
+                </a>
             </nav>
         </header>
     );
