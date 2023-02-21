@@ -1,5 +1,5 @@
 #previwProjectsContainer {
-    margin: 90px auto;
+    margin: 50px auto;
     width: 80%;
 }
 
@@ -18,4 +18,72 @@
 #rowImg {
     width: 580px;
     height: 10px;
+}
+
+#projects-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.previwCardProject {
+    height: 200px;
+    width: 300px;
+    color: white;
+}
+
+.previwCardProject h1{
+    font-size: 22px;
+}
+
+.previwCardProject p{
+    font-size: 14px;
+    color: rgb(216, 216, 216);
+}
+
+#divImage {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#divImage img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#divTechnologiesTexts {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#divTechnologiesTexts p{
+    margin: 0px 3px 5px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #6b42cc36;
+}
+
+#buttonsInCardPreviwProjects {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px;
+}
+
+#buttonsInCardPreviwProjects button {
+    margin-bottom: 5px;
+    background-color: #121214;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#buttonsInCardPreviwProjects button:hover {
+    background-color: #2F72BC;
+    border: solid 2px #2F72BC;
 }

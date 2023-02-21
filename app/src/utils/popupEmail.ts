@@ -34,7 +34,12 @@ export default function genPopup() {
         const a = document.createElement('a');
         a.setAttribute('href', `${email.l}`);
         a.setAttribute('target', '_blank');
-        a.innerHTML = email.n
+
+        const button = document.createElement('button');
+        button.classList.add('buttonPopUp');
+        button.innerHTML = email.n;
+
+        a.appendChild(button);
 
         a.addEventListener('click', () => {
             document.body.removeChild(background);

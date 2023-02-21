@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    margin: 100px auto 0px;
+    margin: 90px auto 0px;
 }
 
 #TextContent {
@@ -64,7 +64,7 @@ h2 {
     width: 50%;
 }
 
-#contactsContent span button, a {
+#contactsContent span button {
     background-color: #121214;
     border: solid 2px white;
     border-radius: 20px;
@@ -73,11 +73,9 @@ h2 {
     width: 100px;
     font-size: 16px;
     cursor: pointer;
-    text-decoration: none;
-    text-align: center;
 }
 
-#contactsContent span button:hover, a:hover {
+#contactsContent span button:hover {
     background-color: #2F72BC;
     border: solid 2px #2F72BC;
 }

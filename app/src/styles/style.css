@@ -2,3 +2,19 @@ body {
     background-color: #121214;
     font-family: "Be Vietnam Pro", Inter, system-ui, sans;
 }
+
+.buttonPopUp {
+    background-color: #121214;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonPopUp:hover {
+    background-color: #2F72BC;
+    border: solid 2px #2F72BC;
+}

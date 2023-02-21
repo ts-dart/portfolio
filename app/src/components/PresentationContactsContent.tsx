@@ -19,8 +19,12 @@ export default function TextImgContent() {
             <div id='contactsContent'>
                 <h2>Você pode me encontrar em :</h2>
                 <span>
-                    <a href="https://github.com/ts-dart" target="_blank" rel="noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/thiago-henrique-da-silva-souza-634162127/" target="_blank" rel="noreferrer">Linkedin</a>
+                    <a href="https://github.com/ts-dart" target="_blank" rel="noreferrer">
+                        <button>GitHub</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thiago-henrique-da-silva-souza-634162127/" target="_blank" rel="noreferrer">
+                        <button>Linkedin</button>
+                    </a>
                     <button onClick={()=>emailsPopup()}>Email</button>
                 </span>
             </div>

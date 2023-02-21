@@ -1,17 +1,38 @@
 import '../styles/PreviwProjects.css';
 
+interface project {
+    name: string,
+    repLink: string,
+    deployLink: string,
+    technologies: string[], 
+    description: string,
+    imageThumbUrl: string,
+}
+
 export default function PreviwProjects() {
-    const arrProjects = [
+    const arrProjects:project[] = [
         {
             name: 'TTunes',
             repLink: 'https://github.com/ts-dart/TTunes',
             deployLink: 'https://t-tunes.vercel.app/',
-            imageThumbUrl: '',
+            technologies: ['React', 'JavaScript', 'React Router Dom'],
+            description: 'reproduza o preview de suas musicas favoritas',
+            imageThumbUrl: 'https://raw.githubusercontent.com/ts-dart/portfolio/main/app/public/images/Captura%20de%20tela%20de%202023-02-20%2019-38-29.png',
         },
         {
             name: 'TTrivia',
             repLink: 'https://github.com/ts-dart/frontend-app-trivia',
             deployLink: 'https://app-trivia.vercel.app/',
+            technologies: ['React', 'TypeScript', 'React Router Dom'],
+            description: 'faça o maximo de pontos que puder',
+            imageThumbUrl: 'https://raw.githubusercontent.com/ts-dart/portfolio/main/app/public/images/Captura%20de%20tela%20de%202023-02-20%2019-41-14.png',
+        },
+        {
+            name: 'TFutebol',
+            repLink: 'https://github.com/ts-dart/trybe-futebol-clube',
+            deployLink: '',
+            technologies: ['TypeScript', 'Express', 'Sequelize'],
+            description: 'e possivel ver classificação de times, jogos e mais',
             imageThumbUrl: '',
         }
     ]
@@ -19,8 +40,28 @@ export default function PreviwProjects() {
     return (
         <div id="previwProjectsContainer">
             <div id='previwProjectsCabecalho'>
-                <h1>Aqui estão alguns dos meus projetos favoritos.</h1>
                 <img id='rowImg' src='data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22580%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22580%22%20height%3D%2220%22%20rx%3D%2210%22%20ry%3D%2210%22%20fill%3D%22%232F72BC%22%3E%3C%2Frect%3E%0A%3C%2Fsvg%3E' alt='' />
+                <h1>Aqui estão alguns dos meus projetos favoritos.</h1>
+            </div>
+            <div id='projects-content'>
+                {arrProjects.map((project:project) => (
+                    <div className='previwCardProject'>
+                        <div id='divImage'>
+                            <img src={project.imageThumbUrl} alt="" />
+                        </div>
+                        <h1>{project.name}</h1>
+                        <p>{project.description}</p>
+                        <div id='divTechnologiesTexts'>
+                            {project.technologies.map((technologie) => <p>{technologie}</p>)}
+                        </div>
+                        <div id='buttonsInCardPreviwProjects'>
+                            <a href={project.repLink} target='_blank'><button>Acessar repositorio</button></a>
+                            {project.deployLink.length > 0 
+                                ? (<a href={project.deployLink} target='_blank'><button>Acessar aplicação</button></a>)
+                                : null}
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
