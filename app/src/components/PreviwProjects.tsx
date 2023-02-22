@@ -1,42 +1,8 @@
+import { arrProjects } from '../utils/data';
+import { project } from '../types/types';
 import '../styles/PreviwProjects.css';
 
-interface project {
-    name: string,
-    repLink: string,
-    deployLink: string,
-    technologies: string[], 
-    description: string,
-    imageThumbUrl: string,
-}
-
 export default function PreviwProjects() {
-    const arrProjects:project[] = [
-        {
-            name: 'TTunes',
-            repLink: 'https://github.com/ts-dart/TTunes',
-            deployLink: 'https://t-tunes.vercel.app/',
-            technologies: ['React', 'JavaScript', 'React Router Dom'],
-            description: 'reproduza o preview de suas musicas favoritas',
-            imageThumbUrl: 'https://raw.githubusercontent.com/ts-dart/portfolio/main/app/public/images/Captura%20de%20tela%20de%202023-02-20%2019-38-29.png',
-        },
-        {
-            name: 'TTrivia',
-            repLink: 'https://github.com/ts-dart/frontend-app-trivia',
-            deployLink: 'https://app-trivia.vercel.app/',
-            technologies: ['React', 'TypeScript', 'React Router Dom'],
-            description: 'faça o maximo de pontos que puder',
-            imageThumbUrl: 'https://raw.githubusercontent.com/ts-dart/portfolio/main/app/public/images/Captura%20de%20tela%20de%202023-02-20%2019-41-14.png',
-        },
-        {
-            name: 'TFutebol',
-            repLink: 'https://github.com/ts-dart/trybe-futebol-clube',
-            deployLink: '',
-            technologies: ['TypeScript', 'Express', 'Sequelize'],
-            description: 'veja classificação de times, jogos e mais "dados simulados"',
-            imageThumbUrl: 'https://raw.githubusercontent.com/ts-dart/portfolio/main/app/public/images/Captura%20de%20tela%20de%202023-02-21%2000-23-37.png',
-        }
-    ]
-
     return (
         <div id="previwProjectsContainer">
             <div id='previwProjectsCabecalho'>
@@ -44,8 +10,8 @@ export default function PreviwProjects() {
                 <h1>Aqui estão alguns dos meus projetos favoritos.</h1>
             </div>
             <div id='projects-content'>
-                {arrProjects.map((project:project) => (
-                    <div className='previwCardProject'>
+                {arrProjects.map((project:project, index:number) => (
+                    <div className='previwCardProject' key={index}>
                         <div id='divImage'>
                             <img src={project.imageThumbUrl} alt="" />
                         </div>

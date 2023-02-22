@@ -18,3 +18,18 @@ body {
     background-color: #2F72BC;
     border: solid 2px #2F72BC;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+
+    height: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #2f73bc65;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #121214;
+}

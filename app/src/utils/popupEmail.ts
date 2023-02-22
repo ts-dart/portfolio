@@ -26,7 +26,7 @@ export default function genPopup() {
         },
         {
             n: 'Acessar Outlook',
-            l: 'https://outlook.live.com/'
+            l: 'https://outlook.live.com/mail/0/deeplink/compose?mailtouri=mailto%3Athiagoedusan5.11%40outlook.com'
         }
     ];
 

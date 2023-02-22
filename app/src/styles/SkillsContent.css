@@ -1,0 +1,32 @@
+#skillsContent {
+    margin: 50px auto 100px;
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textSkillsContent {
+    color: white;
+}
+
+#divImgsSkillsContent {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divImgSkillTool {
+    width: 12%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divImgSkillTool p {
+    color: #68408e;
+}
