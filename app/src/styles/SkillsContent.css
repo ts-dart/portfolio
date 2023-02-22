@@ -8,7 +8,9 @@
 }
 
 #textSkillsContent {
+    margin: 0px 0px 30px 80px;
     color: white;
+    font-size: 32px;
 }
 
 #divImgsSkillsContent {
