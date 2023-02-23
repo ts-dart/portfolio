@@ -3,21 +3,21 @@
     width: 80%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #textSkillsContent {
-    margin: 0px 0px 30px 80px;
+    margin: 0px 0px 30px 10px;
     color: white;
-    font-size: 32px;
+    font-size: 38px;
 }
 
 #divImgsSkillsContent {
     width: 50%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 

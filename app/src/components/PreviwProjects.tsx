@@ -21,9 +21,24 @@ export default function PreviwProjects() {
                             {project.technologies.map((technologie) => <p>{technologie}</p>)}
                         </div>
                         <div id='buttonsInCardPreviwProjects'>
-                            <a href={project.repLink} target='_blank' rel="noreferrer"><button>Acessar repositorio</button></a>
+                            <a href={project.repLink} target='_blank' rel="noreferrer">
+                                <button 
+                                disabled={project.comingSoon} 
+                                className={project.comingSoon ? 'btnDisabled' : 'btnInCardPreviwProjects'}
+                                >
+                                    Acessar repositorio
+                                </button>
+                            </a>
                             {project.deployLink.length > 0 
-                                ? (<a href={project.deployLink} target='_blank' rel="noreferrer"><button>Acessar aplicação</button></a>)
+                                ? (
+                                <a href={project.deployLink} target='_blank' rel="noreferrer">
+                                    <button
+                                    disabled={project.comingSoon}
+                                    className={project.comingSoon ? 'btnDisabled' : 'btnInCardPreviwProjects'}
+                                    >
+                                        Acessar aplicação
+                                    </button>
+                                </a>)
                                 : null}
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import PresentationContactsContent from '../components/PresentationContactsContent';
 import PreviwProjects from '../components/PreviwProjects';
 import SkillsContent from '../components/SkillsContent';
+import Footer from '../components/Footer';
 
 export default function Home() {
     return(
@@ -12,6 +13,7 @@ export default function Home() {
                 <PreviwProjects/>
                 <SkillsContent/>
             </main>
+            <Footer/>
         </>
     );
 }

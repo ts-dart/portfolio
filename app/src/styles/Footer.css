@@ -1,0 +1,11 @@
+footer {
+    margin: 10px auto;
+    width: 60%;
+    border-top: 1px solid #2F72BC;
+}
+
+footer p {
+    margin: 20px auto 20px;
+    width: 115px;
+    color: #b9b8b8;
+}

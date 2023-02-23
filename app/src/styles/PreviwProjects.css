@@ -30,7 +30,6 @@
 .previwCardProject {
     width: 300px;
     color: white;
-    /* margin-bottom: 50px; */
 }
 
 .previwCardProject h1{
@@ -39,7 +38,7 @@
 
 .previwCardProject p{
     font-size: 14px;
-    color: rgb(216, 216, 216);
+    color: #b9b8b8;
 }
 
 #divImage {
@@ -62,7 +61,7 @@
     margin: 0px 3px 5px 0px;
     border-radius: 10px;
     padding: 10px;
-    background-color: #6b42cc36;
+    background-color: #68408e49;
 }
 
 #buttonsInCardPreviwProjects {
@@ -71,7 +70,7 @@
     margin-top: 10px;
 }
 
-#buttonsInCardPreviwProjects button {
+.btnInCardPreviwProjects {
     margin-bottom: 5px;
     background-color: #121214;
     border: solid 2px white;
@@ -83,7 +82,19 @@
     cursor: pointer;
 }
 
-#buttonsInCardPreviwProjects button:hover {
+.btnInCardPreviwProjects:hover {
     background-color: #2F72BC;
     border: solid 2px #2F72BC;
+}
+
+.btnDisabled {
+    opacity: 0.5;
+    margin-bottom: 5px;
+    background-color: #121214;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
 }

@@ -1,5 +1,6 @@
 export interface project {
     name: string,
+    comingSoon: boolean,
     repLink: string,
     deployLink: string,
     technologies: string[], 
